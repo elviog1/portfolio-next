@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import LanguageButton from "./LanguageButton";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import Image from "next/image";
 import logo from "../../public/logo-name.png";
