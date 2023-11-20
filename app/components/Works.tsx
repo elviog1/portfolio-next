@@ -1,13 +1,18 @@
 "use client";
 import React, { useState } from "react";
 import Project from "./Project";
+import futbolCiego from "../../public/futbolciego1.jpeg";
+import freeFigma from "../../public/freefigmatemplates.jpeg";
+import memoryGame from "../../public/game1.jpeg";
+import pizza from "../../public/pizzeria1.jpeg";
+import braille from "../../public/braille-traductor.jpeg";
 export default function Works() {
   const projects = [
     {
       name: "Futbol Ciego Avellaneda",
       description:
         "Proyecto de un equipo de fútbol para ciegos, donde se muestran los jugadores con su descripción personal, ficha de contacto, información del club y como administrador puedes crear y editar jugadores.",
-      picture: "futbolciego1.jpeg",
+      picture: futbolCiego,
       url: "https://futbolciegoavellaneda.vercel.app/",
       github: "https://github.com/elviog1/piranias",
     },
@@ -15,7 +20,7 @@ export default function Works() {
       name: "Free Figma Templates (Clone)",
       description:
         "Landing page clonada del sitio oficial de Free Figma Templates que ofrece sus servicios gratis.",
-      picture: "freefigmatemplates.jpeg",
+      picture: freeFigma,
       url: "https://freefigmatemplates-clone.netlify.app/",
       github: "https://github.com/elviog1/freeFigmaTemplates-clone",
     },
@@ -23,7 +28,7 @@ export default function Works() {
       name: "Memory Game",
       description:
         "Juego en el que tendrás que encontrar dos cartas iguales hasta que no queden cartas boca abajo.",
-      picture: "game1.jpeg",
+      picture: memoryGame,
       url: "https://memory-fruit-game.netlify.app/",
       github: "https://github.com/elviog1/game-memory",
     },
@@ -31,7 +36,7 @@ export default function Works() {
       name: "Pizzeria",
       description:
         "Proyecto personal donde realizo un ecommerce donde puedes comprar, retirar y editar las cantidades del producto y como administrador te sale una tabla con el pedido del usuario a realizar.",
-      picture: "pizzeria1.jpeg",
+      picture: pizza,
       url: "https://pizzeria-solano.vercel.app/",
       github: "https://github.com/elviog1/id-pizza",
     },
@@ -39,7 +44,7 @@ export default function Works() {
       name: "Braille Traductor",
       description:
         "Pagina donde escribiremos una frase y obtendremos el resultado en Braille.",
-      picture: "braille-traductor.jpeg",
+      picture: braille,
       url: "https://braille-traductor.vercel.app/",
       github: "https://github.com/elviog1/braille-traductor",
     },

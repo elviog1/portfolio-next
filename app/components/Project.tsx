@@ -1,13 +1,16 @@
+import Image from "next/image";
 import React from "react";
-export default function Project({ project }: string) {
+export default function Project({ project }: any) {
   return (
     <div className="flex flex-col max-w-sm text-center justify-between text-xl dark:bg-gray-300 dark:text-gray-900 rounded-xl hover:scale-105 duration-300 m-2 hover:shadow-xl">
       <div>
         <span className="font-serif text-center font-bold">{project.name}</span>
-        <img
+        <Image
           src={project.picture}
           alt="picture project"
           className="h-44 w-full"
+          width={1000}
+          height={1000}
         />
       </div>
       <span className="font-serif ">{project.description}</span>

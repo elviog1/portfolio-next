@@ -3,6 +3,9 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import LanguageButton from "./LanguageButton";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
+import Image from "next/image";
+import logo from "../../public/logo-name.png";
+import logoDark from "../../public/logo-name-dark.png";
 export default function Header() {
   const [clickButton, setClickButton] = useState(true);
   const [isDark, setIsDark] = useState(false);
@@ -24,9 +27,21 @@ export default function Header() {
     <header className="p-4">
       <nav className="container mx-auto flex items-center justify-between">
         {!isDark ? (
-          <img src="logo-name.png" alt="logo-portfolio" className="w-40" />
+          <Image
+            src={logo}
+            alt="logo-portfolio"
+            className="w-40"
+            width={1000}
+            height={1000}
+          />
         ) : (
-          <img src="logo-name-dark.png" alt="logo-portfolio" className="w-40" />
+          <Image
+            src={logoDark}
+            alt="logo-portfolio"
+            className="w-40"
+            width={1000}
+            height={1000}
+          />
         )}
         <div className="hidden md:block">
           <div className="flex gap-4">
