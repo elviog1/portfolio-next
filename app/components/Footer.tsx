@@ -21,18 +21,19 @@ export default function Footer() {
       id="contact"
       className="flex flex-col items-center text-4xl mb-5  gap-3  "
     >
-      <div className="">
-        <a
-          href="Elvio_Galeano(Developer).pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          download="Elvio_Galeano.pdf"
-          className="text-2xl font-bold font-serif duration-200 hover:text-orange-400"
-        >
-          CV
-        </a>
-      </div>
-      <div className="flex gap-2 flex-wrap ">
+      <h2>Contactame</h2>
+      <div className="flex gap-2 flex-wrap items-center ">
+        <div className="">
+          <a
+            href="Elvio_Galeano(Developer).pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            download="Elvio_Galeano.pdf"
+            className="text-2xl font-bold font-serif duration-200 hover:text-orange-400"
+          >
+            CV
+          </a>
+        </div>
         <a
           target="_blank"
           className="hover:animate-pulse duration-200 hover:text-gray-600"
