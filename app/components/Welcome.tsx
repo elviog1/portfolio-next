@@ -1,5 +1,4 @@
 import React from "react";
-import ActivityWidget from "./ActivityWidget";
 
 export default function Welcome() {
   return (
@@ -14,8 +13,6 @@ export default function Welcome() {
         <span className="text-3xl max-sm:text-xl text-center">
           Desarrollador Fullstack
         </span>
-        <span className="text-xl text-center">Actividad de contribución</span>
-        <ActivityWidget />
       </div>
     </section>
   );

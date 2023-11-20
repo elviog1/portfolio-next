@@ -6,8 +6,17 @@ import freeFigma from "../../public/freefigmatemplates.jpeg";
 import memoryGame from "../../public/game1.jpeg";
 import pizza from "../../public/pizzeria1.jpeg";
 import braille from "../../public/braille-traductor.jpeg";
+import muonline from "../../public/Mu-online.png";
 export default function Works() {
   const projects = [
+    {
+      name: "Mu Online",
+      description:
+        "Proyecto personal del videojuego Mu Online donde se muestra informacion del juego, como los personajes disponibles y los diferentes sets de cada personaje.",
+      picture: muonline,
+      url: "https://mu-online-items-next.vercel.app/",
+      github: "https://github.com/elviog1/mu-online-items-next",
+    },
     {
       name: "Futbol Ciego Avellaneda",
       description:
@@ -50,13 +59,13 @@ export default function Works() {
     },
   ];
 
-  const noticiasPorSeccion: any = 5; // Define el número de noticias por sección
+  const noticiasPorSeccion: number = 4; // Define el número de noticias por sección
 
   const [seccionActual, setSeccionActual] = useState(1);
 
   const totalSecciones = Math.ceil(projects.length / noticiasPorSeccion); // cantidad de noticias dividido noticias secciones
 
-  const cambiarSeccion = (seccion: any) => {
+  const cambiarSeccion = (seccion: number) => {
     setSeccionActual(seccion);
   };
   const startIndex = (seccionActual - 1) * noticiasPorSeccion;
